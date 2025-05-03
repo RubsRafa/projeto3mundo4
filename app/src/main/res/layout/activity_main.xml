@@ -16,14 +16,30 @@
             android:id="@+id/list_view"
             android:layout_marginTop="10dp"
             android:layout_width="160dp"
-            android:layout_height="130dp"
+            android:layout_height="135dp"
             android:layout_gravity="center"/>
-
-        <Button
-            android:id="@+id/button_add"
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
             android:layout_width="match_parent"
-            android:layout_height="38dp"
-            android:text="Testar Áudio" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_add"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="95dp"
+                android:layout_height="48dp"
+                android:text="add"
+                android:textAlignment="viewEnd" />
+
+            <Button
+                android:id="@+id/button_read_items"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="95dp"
+                android:layout_height="48dp"
+                android:text="read"
+                android:textAlignment="textStart"/>
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
